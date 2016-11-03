@@ -1,0 +1,159 @@
+/* Responsive disable full width  - Apollo CSS */
+
+
+//breakpoint definitions
+$zero: 0px;
+$small-min: 320px;
+$small-max: 599px;
+$medium-min: 600px;
+$medium-max: 899px;
+$large-min: 900px;
+
+
+// Defines media and breakpoints
+
+@mixin respond-to($media) {
+  @if $media == handheld {
+    @media only screen and (max-width: $small-min) { @content; }
+  }
+  @else if $media == zero-to-tablet {
+    @media only screen and (min-width: $zero) and (max-width: $small-max) { @content; }
+  }  
+  @else if $media == tablet {
+    @media only screen and (min-width: $medium-min) {
+      @content;
+    }
+    .ie7 &,
+    .ie8 & {
+      @content;
+    }
+  }
+  @else if $media == tablet-max {
+    @media only screen and (min-width: $medium-min) and (max-width: $medium-max){ @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $large-min) {
+      @content;
+    }
+    .ie7 &,
+    .ie8 & {
+      @content;
+    }
+  }
+}
+
+// example
+.example-class-for-sass {
+// global styles
+
+// from 0 -> 320
+  @include respond-to(handheld) {  } 
+// from 0 to 599 
+  @include respond-to(zero-to-tablet) {  } 
+//from 600 -> infinity
+  @include respond-to(tablet) {  } 
+//from 600 -> 899
+  @include respond-to(tablet-max) {  } 
+//from 900 -> infinity
+  @include respond-to(desktop) {  } 
+}
+
+.wp-caption {
+  @include respond-to(zero-to-tablet) {
+    max-width: 100%;
+    width: 96% !important;
+    padding: 2% !important;
+  }
+}
+
+.wp-caption img,
+img.aligncenter,
+img.alignleft,
+img.alignright,
+img.alignnone {
+  @include respond-to(zero-to-tablet) { 
+    max-width: 100%; 
+    width: 100%;
+    height: auto;
+    padding: 0px;
+  } 
+  @include respond-to(tablet-max) {
+    max-width: 100%; 
+    height: auto;
+  }
+}
+
+.page img.shadow,
+.post img.shadow {
+  @include respond-to(zero-to-tablet) {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
+  }
+  @include respond-to(tablet-max) {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
+  }
+}
+
+.page img.shadow,
+.post img.shadow ,
+.post #content-wrap img,
+.page #content-wrap img {
+  @include respond-to(zero-to-tablet) {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    max-width:100%;
+  }
+  @include respond-to(tablet-max) { 
+    max-width: 100%; 
+    height: auto;
+  }
+}  
+
+.post #content-wrap .wp-caption img,
+.page #content-wrap .wp-caption img {
+  @include respond-to(zero-to-tablet) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.post #content-wrap img[src*="t.gif"],
+.page #content-wrap img[src*="t.gif"] {
+  @include respond-to(zero-to-tablet) {
+    width: auto !important;
+    height: auto;
+    padding: 0px;
+    max-width:0;
+  } 
+  @include respond-to(tablet-max) { 
+    max-width: 100%; 
+    height: auto; 
+  } 
+}
+
+//sets responsive styles for text widgets and image widgets
+.textwidget img,
+#secondary img.ufhealth-image-widget {
+  max-width: 100%;
+  height: auto;
+
+  @include respond-to(tablet) {
+    width: auto;
+    height: auto;
+  }
+}
+
+img.no-responsive {
+  @include respond-to(zero-to-tablet) { 
+    width: auto !important;
+    height: auto !important;
+  } 
+  @include respond-to(tablet-max) { 
+    width: auto !important;
+    height: auto !important;
+  }
+}

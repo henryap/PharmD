@@ -1,0 +1,116 @@
+/*-  PRINT STYLES
+----------------------------------------------------------------------*/
+@media print {
+
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a:after {
+    content: " (" attr(href) ")";
+  }
+  abbr:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after {
+    content: "";
+  }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr, img {
+    page-break-inside: avoid;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  table { page-break-inside:auto }
+  tr    { page-break-inside:avoid; page-break-after:auto }
+  thead { display:table-header-group }
+  tfoot { display:table-footer-group }
+
+  #institutional-nav,
+  #inst-home,
+  #inst-healing,
+  #inst-learning,
+  #inst-discovery,
+  #inst-community,
+  #header-social,
+  #header-search-wrap,
+  #primary-nav,
+  #breadcrumb,
+  #sidebar-nav,
+  #sidebar-left,
+  #sidebar-right,
+  #sidebar-post,
+  #site-nav,
+  #footer_top,
+  #edit,
+  #institutional-footer,
+  #header-actionitem,
+  #ribbon-responsive-top,
+  #ribbon-user-role-menu,
+  #social-content,
+  #flyout-menu {
+  display: none !important;
+  }
+
+  .single-meta,
+  .single-navigation,
+   {
+  display: none !important;
+  }
+
+  #whole_page {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  #content #main-content {
+  width: 95% !important;
+  }
+
+  #content iframe {
+  display: block;
+  width: 100% !important;
+  }
+
+  #content-shadow,
+  #content-wrap {
+  background: transparent !important; 
+  }
+
+  #header-parent-organization-logo {
+    width: 0 !important; 
+  }
+
+  #header-title-text-right {
+    width: 100% !important; 
+    border-left: 0px solid #fff !important; 
+    padding-left: 0 !important; 
+    margin-bottom: 5px; 
+  }
+
+  body h1 { font-size: 28px; }
+  body h3 { font-size: 21px; }
+  body h2 { font-size: 26px; }
+  body p  { font-size: 16px; }
+
+}

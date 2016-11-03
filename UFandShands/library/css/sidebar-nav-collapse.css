@@ -1,0 +1,15 @@
+/*-  Collapses left sidebar nav inactive parent items for enhanced
+     usability on larger sites.
+----------------------------------------------------------------------*/
+
+#sidebar-nav .children {
+    display: none;
+    list-style-type: none; 
+}
+
+#sidebar-nav .current_page_item .children,
+#sidebar-nav .current_page_parent .children,
+#sidebar-nav .current_page_ancestor .children
+{
+    display: block;
+}

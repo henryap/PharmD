@@ -1,0 +1,93 @@
+/* Responsive Apollo CSS */
+
+/* debug */
+
+.columns1 {border: 1px solid black;}
+
+/* background colors */
+/*#nav-institutional1 { background-color: red; }
+#header { background-color: blue; }
+#nav-primary { background-color: green; }
+#slider { background-color: yellow; }
+#secondary { background-color: white; }
+#nav-role { background-color: gray; }
+#footer-widget { background-color: orange; }
+#footer { background-color: blue; }
+#content {background-color: orange;}*/
+
+/* general styles */
+
+.menu-button {
+  padding: 3px 0px 5px 26px;
+  color: #fff;
+  background: url(../img/menu.png) 3px 0px no-repeat scroll #555;
+  width: 70px;
+  border: 1px solid #666;
+}
+.menu-button a { color: #fff;}
+
+
+/* Ribbon styles */
+.ribbon { display: block;}
+
+/* Ribbon Colors */
+/*#ribbon-nav-institutional { background-color: red;}
+#ribbon-header {background-color: blue;}
+#ribbon-nav-primary {background-color: green;}
+#ribbon-slider {background-color: yellow;}
+#ribbon-secondary {background-color: white;}
+#ribbon-nav-role {background-color: gray;}
+#ribbon-footer-widget {background-color: orange;}
+#ribbon-footer {background-color: blue;}
+*/
+/*  */
+
+#ribbon-nav-institutional {
+	background: transparent url(../../images/bg-institutional-nav.jpg) repeat-x;
+	border-bottom: 1px solid #D7DEF0; /* Light Blue */
+	height: 27px;
+	}
+/*// VISIBILITY*/
+/*// Standard 'Large' display - 960px */
+.show-for-small, .show-for-medium, .show-for-medium-down, .hide-for-large { display: none !important; }
+.hide-for-small, .hide-for-medium, .hide-for-medium-down, .show-for-large { display: inherit !important; }
+
+/*// medium display - 600px */
+@media only screen and (min-width: 600px) { 
+  .hide-for-small, .show-for-medium, .show-for-medium-down, .hide-for-large, .hide-for-large-up { display: inherit !important; }
+  .show-for-small, .hide-for-medium, .hide-for-medium-down, .show-for-large, .show-for-large-up { display: none !important; }
+}
+/* Small display - 320 px */
+@media only screen and (max-width: 767px) { 
+  .show-for-small, .hide-for-medium, .show-for-medium-down, .hide-for-large, .hide-for-large-up, .hide-for-xlarge { display: inherit !important; }
+  .hide-for-small, .show-for-medium, .hide-for-medium-down, .show-for-large, .show-for-large-up, .show-for-xlarge { display: none !important; } 
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////
+//      320 pixels
+/////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 320px) {
+  .container{ width: 320px; }
+  #ribbon-primary-nav { display: none; }
+}/*// end 320*/
+
+/*/////////////////////////////////////////////////////////////////////////////
+//      600 pixels
+/////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 600px) {
+  .hide-for-small {}
+  .container, .container-24 .span-12, #secondary .span-12 { width: 600px; }
+  .container-24 .span-6, #secondary .span-6 { width: 300px;}
+
+}/*// end 600*/
+
+/*/////////////////////////////////////////////////////////////////////////////
+//      960 pixels
+/////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 960px) { 
+  .container{ width: 960px; }
+
+  #ribbon-primary-nav { display: block; }
+}/*// end 960*/
+

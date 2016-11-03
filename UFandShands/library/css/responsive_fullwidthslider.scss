@@ -1,0 +1,31 @@
+/* Responsive disable full width sliders - Apollo CSS */
+
+//breakpoint definitions
+$small: 320px;
+$medium: 600px;
+$large: 900px;
+
+// Defines media and breakpoints
+@mixin respond-to($media) {
+  @if $media == handheld {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $medium) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $large) {
+      @content;
+    }
+    .ie7 &,
+    .ie8 & {
+      @content;
+    }
+  }
+}
+
+.full-image-feature {
+  display: none;
+  @include respond-to(tablet) {  }
+  @include respond-to(desktop) { display: block } 
+ }

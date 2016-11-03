@@ -1,0 +1,105 @@
+.ufandshands-content-loading {
+	background: transparent url('images/loader.gif') 0 0 no-repeat;
+	padding-left: 20px;
+}
+
+.ufandshands-content-pagination {
+	clear: both;
+	margin: 5px auto;
+	overflow: visible;
+}
+
+.ufandshands-content-pagination a,
+#secondary .ufandshands-content-pagination a {
+	display: block;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: rgb(0,50,75);
+	color: #555555;
+	text-align: center;
+	text-decoration: none;
+	font: bold 22px/29px Times, 'Times New Roman', Georgia, Palatino;
+	outline: none;
+	vertical-align: middle;
+	background-color: #F3F3F3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+    background-image: -webkit-linear-gradient(top, #eee, #ccc);
+    background-image: -moz-linear-gradient(top, #eee, #ccc);
+    background-image: -ms-linear-gradient(top, #eee, #ccc);
+    background-image: -o-linear-gradient(top, #eee, #ccc);
+    background-image: linear-gradient(top, #eee, #ccc);
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-top: 1px solid #FFF;
+}
+
+.ufandshands-content-pagination a:hover {
+	background-color: #F3F3F3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ddd));
+    background-image: -webkit-linear-gradient(top, #fafafa, #ddd);
+    background-image: -moz-linear-gradient(top, #fafafa, #ddd);
+    background-image: -ms-linear-gradient(top, #fafafa, #ddd);
+    background-image: -o-linear-gradient(top, #fafafa, #ddd);
+    background-image: linear-gradient(top, #fafafa, #ddd);
+}
+
+.ufandshands-content-pagination a:active {
+    -moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+    -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+}
+
+.ufandshands-content-pagination a.disabled,
+.ufandshands-content-pagination a.disabled:hover,
+.ufandshands-content-pagination a.disabled:focus,
+.ufandshands-content-pagination a.disabled:active {
+	background: #F3F3F3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #F3F3F3 0%, #D3D3D3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3F3F3), color-stop(100%,#D3D3D3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #F3F3F3 0%,#D3D3D3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #F3F3F3 0%,#D3D3D3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #F3F3F3 0%,#D3D3D3 100%); /* IE10+ */
+	background: linear-gradient(top,  #F3F3F3 0%,#D3D3D3 100%); /* W3C */
+	color: #A8A8A8;
+}
+
+.ufandshands-content-pagination a:first-child {
+	border-radius: 2px 0 0 2px;
+	-moz-border-radius: 2px 0 0 2px;
+	-webkit-border-radius: 2px 0 0 2px;
+}
+
+.ufandshands-content-pagination a:last-child {
+	border-radius: 0 2px 2px 0;
+	-moz-border-radius: 0 2px 2px 0;
+	-webkit-border-radius: 0 2px 2px 0;
+}
+
+.ufandshands-content-pagination a {
+	border-right: 1px solid #FFF; 
+	border-left: 1px solid #A5A5A5;
+	border-bottom: 1px solid #A5A5A5;   
+}
+
+.ufandshands-content-pagination a:first-child {
+	border-left: none;
+}
+
+.ufandshands-content-pagination a:last-child {
+	border-right: none;
+}
+
+.ufandshands-content-pagination input {
+	border: none;
+	float: left;
+	text-align: center;
+	height: 30px;
+	outline: none;
+	vertical-align: middle;
+	width: 56%;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #CCC;
+	border-top: 1px solid #FFF;
+ 	border-right: none;   
+}

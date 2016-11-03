@@ -1,0 +1,38 @@
+/*  CSS classes for multi-column tag cloud */
+
+#mcTagMap .tagindex, #sc_mcTagMap .tagindex { 
+padding: 6px 0 10px 0; 
+}
+
+#mcTagMap .tagindex h4, #sc_mcTagMap .tagindex h4 { 
+border-bottom: 1px solid #6377B2; 
+padding: 0 0 4px 0; 
+margin: 2px 0 4px 0; 
+}
+
+#mcTagMap .tagindex ul, #sc_mcTagMap .tagindex ul { 
+list-style: none; 
+padding: 1px 0; 
+margin: 0; 
+}
+
+#mcTagMap .tagindex ul li, #sc_mcTagMap .tagindex ul li { 
+list-style: none; 
+padding-left: 10px; 
+margin-bottom: .5em; 
+}
+
+#mcTagMap .holdleft, #sc_mcTagMap .holdleft { 
+width: 190px; 
+display: inline; 
+margin: 0 20px 0 0; 
+float: left;
+}
+
+#mcTagMap .noMargin, #sc_mcTagMap .noMargin {
+margin: 0 0 0 0;
+}
+
+#mcTagMap .morelink, #sc_mcTagMap .morelink { 
+display: none; 
+}

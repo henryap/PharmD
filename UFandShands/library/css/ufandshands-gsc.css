@@ -1,0 +1,124 @@
+/*- SEARCH BOX
+----------------------------------------------------------------------*/
+.gsc-branding {
+  display: none;
+}
+
+.gsc-search-box input.gsc-input {
+  -moz-border-radius: 2px;
+  -moz-box-shadow: 0px 0px 2px #A5A5A5;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 2px black;
+  border-radius: 2px;
+  border: 1px solid #BFBFBF;
+  box-shadow: 0px 0px 2px #BFBFBF;
+  color: #7E7E7E;
+  font-family: Georgia, serif;
+  font-size: 1em;
+  font-style: italic;
+  /*height: 17px;*/
+  /*left: 13px;*/
+  margin: 0;
+  padding: 6px 0;
+  /*position: absolute;*/
+  /*top: 10px;*/
+/*  width: 237px;*/
+  background-position: 10px 50% !important;
+}
+
+@media only screen and (min-width: 960px) {
+  .gsc-search-box input.gsc-input {
+    padding: 6px 7px;
+  }
+}
+
+
+#searchform-wrap .gsc-search-box input.gsc-input-focus {
+  background-image: none !important;
+}
+
+#content-wrap .gsc-search-box {
+  display: none;
+}
+
+.gsc-clear-button {
+  display: none;
+}
+
+input.gsc-search-button {
+  position: absolute;
+  width: 42px;
+  height: 27px;
+  /*right: 14px;*/
+  /*top: 12px;*/
+  right: 11px;
+  top: 7px;
+  margin: 0;
+  border: none;
+  background: transparent url('/wp-content/themes/UFandShands/images/header-search-btn-orange.jpg') 0 0 no-repeat; 
+  text-indent: -9000px;
+  text-transform: capitalize;
+}
+
+
+
+.gssb_c {
+  z-index: 999999 !important;
+}
+
+/*- SEARCH RESULTS
+----------------------------------------------------------------------*/
+
+div.gsc-result-info {
+  margin: 0;
+}
+
+.gsc-above-wrapper-area-container {
+  margin-bottom: 5px;
+}
+
+.gsc-control-cse .gs-spelling,
+.gsc-control-cse .gs-result .gs-title,
+.gsc-control-cse .gs-result .gs-title * {
+  font-family: ufshands, Arial, sans-serif;
+  text-decoration: none;
+  color: #6377B2;
+  font-size: 18px !important;
+}
+
+.gsc-control-cse .gs-spelling:hover,
+.gsc-control-cse .gs-result .gs-title:hover,
+.gsc-control-cse .gs-result .gs-title:hover * {
+  color: #243778;
+}
+
+article .gsc-results .gsc-cursor-box .gsc-cursor-page {
+  display: block;
+  float: left;
+  margin: 10px 2px 2px 0;
+  padding: 6px 9px 5px 9px;
+  text-decoration: none;
+  width: auto;
+  color: #4D4D4D;
+  background: #D7DEF0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #D7DEF0;
+  font-weight: bold;
+}
+
+article .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  padding: 6px 9px 5px 9px;
+  background: #243778;
+  color: white;
+  border: 1px solid #243778;
+}
+
+article .gsc-table-result {
+  margin-bottom: 5px;
+}
+
+a.gs-title {
+  border-bottom: 1px dotted #6377B2 !important;
+}
