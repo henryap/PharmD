@@ -3,84 +3,80 @@ $(document).ready(function(){
     $( "input#header-search-field" ).focus(function() {
         if(this.value=='Search Our Site'){this.value=''}
      });
-    
+
     $( "input#header-search-field" ).blur(function() {
-        if(this.value==''){this.value='Search Our Site'}  
+        if(this.value==''){this.value='Search Our Site'}
      });
 
-    
+
     $( "#fname" ).focus(function() {
         if(this.value=='First Name*' || this.value=='Please enter your first name.'){this.value=''}
      });
-    
+
     $( "#fname" ).blur(function() {
         if(this.value==''){this.value='First Name*'}
      });
-    
+
     $( "#lname" ).focus(function() {
         if(this.value=='Last Name*' || this.value=='Please enter your last name.'){this.value=''}
-     });    
-    
+     });
+
     $( "#lname" ).blur(function() {
         if(this.value==''){this.value='Last Name*'}
-     });  
-    
+     });
+
     $( "#email" ).focus(function() {
         if(this.value=='Email*' || this.value=='Please enter a valid email address.'){this.value=''}
      });
-    
+
     $( "#email" ).blur(function() {
         if(this.value==''){this.value='Email*'}
-     });   
-    
+     });
+
     $( "#phone" ).focus(function() {
         if(this.value=='Phone' || this.value=='Please enter a valid phone number.'){this.value=''}
-     });  
-    
+     });
+
     $( "#phone" ).blur(function() {
         if(this.value==''){this.value='Phone'}
-     });  
-    
+     });
+
     //form clearing for apply page forms
     $( ".fname" ).focus(function() {
         if(this.value=='First Name*' || this.value=='Please enter your first name.'){this.value=''}
      });
-    
+
     $( ".fname" ).blur(function() {
         if(this.value==''){this.value='First Name*'}
      });
-    
+
     $( ".lname" ).focus(function() {
         if(this.value=='Last Name*' || this.value=='Please enter your last name.'){this.value=''}
-     });    
-    
+     });
+
     $( ".lname" ).blur(function() {
         if(this.value==''){this.value='Last Name*'}
-     });  
-    
+     });
+
     $( ".email" ).focus(function() {
         if(this.value=='Email*' || this.value=='Please enter a valid email address.'){this.value=''}
      });
-    
+
     $( ".email" ).blur(function() {
         if(this.value==''){this.value='Email*'}
-     });   
-    
+     });
+
     $( ".phone" ).focus(function() {
-        if(this.value=='Phone*' || this.value=='Please enter a valid phone number.'){this.value=''}
-     });  
-    
+        if(this.value=='Phone' || this.value=='Please enter a valid phone number.'){this.value=''}
+     });
+
     $( ".phone" ).blur(function() {
         if(this.value==''){this.value='Phone'}
-     });  
+     });
 
-    $( ".current" ).focus(function() {
-        if(this.value=='What Pharm.D. institution are you currently enrolled in?*' || this.value=='Please enter the Pharm.D. institution are you currently enrolled in.'){this.value=''}
-     });  
-    
-    $( ".current" ).blur(function() {
-        if(this.value==''){this.value='What Pharm.D. institution are you currently enrolled in?*'}
-     });  
+     $( ".message" ).focus(function() {
+         if(this.value=='Message' || this.value=='Please enter your message.'){this.value=''}
+     });
 
 });
 
@@ -111,5 +107,4 @@ $(document).ready(function(){
     document.getElementsByTagName('body')[0].appendChild(s);
     atswp();
   }
-}); 
-     
+});
