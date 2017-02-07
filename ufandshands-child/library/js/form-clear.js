@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
     $( "input#header-search-field" ).focus(function() {
-        if(this.value=='Search Our Site'){this.value=''}
+        if(this.value=='Search PharmD Electives'){this.value=''}
      });
 
     $( "input#header-search-field" ).blur(function() {
-        if(this.value==''){this.value='Search Our Site'}
+        if(this.value==''){this.value='Search PharmD Electives'}
      });
 
 
