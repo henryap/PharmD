@@ -8,40 +8,7 @@ $(document).ready(function(){
         if(this.value==''){this.value='Search PharmD Electives'}
      });
 
-
-    $( "#fname" ).focus(function() {
-        if(this.value=='First Name*' || this.value=='Please enter your first name.'){this.value=''}
-     });
-
-    $( "#fname" ).blur(function() {
-        if(this.value==''){this.value='First Name*'}
-     });
-
-    $( "#lname" ).focus(function() {
-        if(this.value=='Last Name*' || this.value=='Please enter your last name.'){this.value=''}
-     });
-
-    $( "#lname" ).blur(function() {
-        if(this.value==''){this.value='Last Name*'}
-     });
-
-    $( "#email" ).focus(function() {
-        if(this.value=='Email*' || this.value=='Please enter a valid email address.'){this.value=''}
-     });
-
-    $( "#email" ).blur(function() {
-        if(this.value==''){this.value='Email*'}
-     });
-
-    $( "#phone" ).focus(function() {
-        if(this.value=='Phone' || this.value=='Please enter a valid phone number.'){this.value=''}
-     });
-
-    $( "#phone" ).blur(function() {
-        if(this.value==''){this.value='Phone'}
-     });
-
-    //form clearing for apply page forms
+    //Form clearing for Apply, Modal, and Banner forms
     $( ".fname" ).focus(function() {
         if(this.value=='First Name*' || this.value=='Please enter your first name.'){this.value=''}
      });
@@ -66,12 +33,22 @@ $(document).ready(function(){
         if(this.value==''){this.value='Email*'}
      });
 
+     //Targets phone input in Banner and Modal phone.
+     $( ".banner_form .phone" ).focus(function() {
+         if(this.value=='Phone' || this.value=='Please enter a valid phone number.'){this.value=''}
+      });
+
+     $( ".banner_form .phone" ).blur(function() {
+         if(this.value==''){this.value='Phone'}
+      });
+
+      //Targets phone input in Apply form.
     $( ".phone" ).focus(function() {
-        if(this.value=='Phone' || this.value=='Please enter a valid phone number.'){this.value=''}
+        if(this.value=='Phone*' || this.value=='Please enter a valid phone number.'){this.value=''}
      });
 
     $( ".phone" ).blur(function() {
-        if(this.value==''){this.value='Phone'}
+        if(this.value==''){this.value='Phone*'}
      });
 
      $( ".message" ).focus(function() {
