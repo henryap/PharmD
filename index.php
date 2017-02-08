@@ -1,2 +1,2 @@
 <?php
-// Silence is golden. Bug-fix branch
+// Silence is golden.
