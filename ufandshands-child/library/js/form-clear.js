@@ -55,6 +55,16 @@ $(document).ready(function(){
          if(this.value=='Message' || this.value=='Please enter your message.'){this.value=''}
      });
 
+     $( ".current" ).focus(function() {
+         if(this.value=='What Pharm.D. institution are you currently enrolled in?*' || this.value=='Please enter the Pharm.D. institution are you currently enrolled in.'){this.value=''}
+      });
+
+     $( ".current" ).blur(function() {
+         if(this.value==''){this.value='What Pharm.D. institution are you currently enrolled in?*'}
+      });
+
+
+
 });
 
 $(document).ready(function(){
